@@ -20,27 +20,43 @@
             <li class="navbar-item"><a href="">Mi lista</a></li>
         </ul>
         <div class="search">
-            <input type="text" class="" placeholder="Títulos, personas, lenguaje">
+            <input type="text" class="" placeholder="Título, personas, lenguaje">
             <i class="fas fa-search"></i>
         </div>
     </nav>
     <header class="banner">
         <img src="img/javascript.png" alt="bg" class="bg">
         <div class="content">
-            <img src="img/jslogo.png" alt="" class="videoTitle">
+            <img src="img/jslogo.png" alt="jslogo" class="videoTitle">
             <h4>
-                <span>2020</span>
-                <span><i>12+</i></span>
-                <span>1h 55min</span>
+                <span>2021</span>
+                <span><i>A</i></span>
+                <span>9h 16min</span>
                 <span>Tutorial</span>
             </h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum placeat quaerat odio quis sed natus sequi nostrum nulla dolorem repudiandae atque, possimus, laboriosam soluta ratione magni, nesciunt pariatur sapiente vero?</p>
+            <p>En este curso completo de JavaScript aprenderás todo lo que necesitas saber para comenzar a trabajar este lenguaje de programación paso a paso con ejemplos.</p>
             <div class="buttons">
-                <a href="#"><i class="fas fa-play"></i>Play</a>
-                <a href="#"><i class="fas fa-plus"></i>Mi lista</a>
+                <a href="#"><i class="fas fa-play" aria-hidden="true"></i>Reproducir</a>
+                <a href="#"><i class="fas fa-plus" aria-hidden="true"></i>Mi lista</a>
             </div>
         </div>
+        <a class="play" onclick="toggleVideo();"><img src="img/play1.png" alt="play_button">Ver Trailer</a>
     </header>
+
+    <div class="trailer">
+        <video src="video/js2.webm" controls="true"></video>
+        <img src="img/close1.png" alt="close" class="close" onclick="toggleVideo();">
+    </div>
+
+    <script>
+        function toggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
     
 </body>
 </html>
