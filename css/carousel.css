@@ -1,0 +1,122 @@
+/* CONTENEDOR Y CONTROLES */
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.container-controllers {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.container-controllers h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.container-controllers .indicators button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.container-controllers .indicators button:hover,
+.container-controllers .indicators button.activo {
+	background: red;
+}
+
+/* CONTENEDOR VÍDEOS Y FLECHAS */
+
+.recommended-videos {
+	margin-bottom: 70px;
+}
+
+.recommended-videos .main-container {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.recommended-videos .main-container .leftArrow,
+.recommended-videos .main-container .rightArrow {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.recommended-videos .main-container .leftArrow:hover,
+.recommended-videos .main-container .rightArrow:hover {
+	background: rgba(0,0,0, .9);
+}
+
+.recommended-videos .main-container .leftArrow {
+	left: 0;
+}
+
+.recommended-videos .main-container .rightArrow {
+	right: 0;
+}
+
+/* CAROUSEL */
+
+.recommended-videos .carousel-container {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.recommended-videos .carousel-container .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.recommended-videos .carousel-container .carousel .vids {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.recommended-videos .carousel-container .carousel .vids.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.recommended-videos .carousel-container .carousel .vids img {
+	width: 100%;
+	vertical-align: top;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+    .recommended-videos .carousel-container {
+		overflow: visible;
+	}
+
+	.recommended-videos .carousel-container .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.recommended-videos .indicators,
+	.recommended-videos .leftArrow,
+	.recommended-videos .rightArrow {
+		display: none;
+	}
+}
