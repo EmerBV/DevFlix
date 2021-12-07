@@ -16,7 +16,7 @@
         <a href="index.html" class="logo"><img src="img/devflix1.gif" alt="logo"></a>
         <ul class="navbar-list">
             <li class="navbar-item"><a href="">Inicio</a></li>
-            <li class="navbar-item"><a href="">Tutoriales</a></li>
+            <li class="navbar-item"><a href="tutorials.html">Tutoriales</a></li>
             <li class="navbar-item"><a href="">Shorts</a></li>
             <li class="navbar-item"><a href="">Mi lista</a></li>
         </ul>
@@ -49,6 +49,77 @@
         <img src="img/close1.png" alt="close" class="close" onclick="toggleVideo();">
     </div>
 
+    <!--
+    <div id="carousel">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <div id="carousel_container">
+            <div id="overflow">
+                <div class="inner">
+                    <div class="slide slide_1">
+                        <div class="slide-content">
+                            <div class="img_container">
+                                <img src="img/html.png" alt="">
+                                <p>Html</p>
+                            </div>
+                            <div class="img_container">
+                                <img src="img/htmlcss.png" alt="">
+                                <p>Html & CSS</p>
+                            </div>
+                            <div class="img_container">
+                                <img src="img/python.png" alt="">
+                                <p>Python</p>
+                            </div>
+                            <div class="img_container">
+                                <img src="img/react.png" alt="">
+                                <p>React</p>
+                            </div>
+                            <div class="img_container">
+                                <img src="img/typescript.png" alt="">
+                                <p>Typescript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide_2">
+                        <div class="slide-content">
+                            <div class="img_container">
+                                <img src="img/angular.png" alt="">
+                                <p>Angular</p>
+                            </div>
+                            <div class="img_container">
+                                <img src="img/bootstrap.png" alt="">
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="img_container">
+                                <img src="img/vue.png" alt="">
+                                <p>Vue</p>
+                            </div>
+                            <div class="img_container">
+                                <img src="img/vsgit.png" alt="">
+                                <p>VS Code Git</p>
+                            </div>
+                            <div class="img_container">
+                                <img src="img/vscode.png" alt="">
+                                <p>VS Code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+        </div>
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+        </div>
+    </div>
+
+    -->
+
+    
     <div class="recommended-videos container">
         <div class="container-controllers">
             <h3>Vídeos recomendados</h3>
@@ -57,7 +128,7 @@
 
         <div class="main-container">
             <button role="button" id="leftArrow" class="leftArrow"><i class="fas fa-angle-left"></i></button>
-
+            
             <div class="carousel-container">
                 <div class="carousel">
                     <div class="vids">
@@ -129,6 +200,7 @@
             <button role="button" id="rightArrow" class="rightArrow"><i class="fas fa-angle-right"></i></button>
         </div>
     </div>
+    
 
     <script>
         function toggleVideo(){

@@ -27,7 +27,7 @@
 
 .container-controllers .indicators button:hover,
 .container-controllers .indicators button.activo {
-	background: red;
+	background: #0d6efd;
 }
 
 /* CONTENEDOR VÍDEOS Y FLECHAS */
@@ -91,7 +91,7 @@
 	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
 }
 
-.recommended-videos .carousel-container .carousel .vids.hover {
+.recommended-videos .carousel-container .carousel .vids:hover {
 	transform: scale(1.2);
 	transform-origin: center;
 }
@@ -101,9 +101,33 @@
 	vertical-align: top;
 }
 
+/*
+.carousel-container .carousel .vids .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(45deg, #03a9f4, rgba(3,169,244,0.5));
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.carousel-container .carousel:hover .vids .content {
+    opacity: 1;
+}
+*/
+
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 991px) {
     .recommended-videos .carousel-container {
 		overflow: visible;
 	}
