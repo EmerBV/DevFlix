@@ -48,7 +48,8 @@ nav .logo img {
     letter-spacing: 1px;
 }
 
-.navbar-list li:hover a {
+.navbar-list li a:hover,
+.navbar-list li a.active {
     color: #0d6efd;
 }
 

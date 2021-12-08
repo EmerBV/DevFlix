@@ -142,13 +142,12 @@ section {
 @media (max-width: 991px) {
     nav {
         padding: 20px 50px;
-        flex-direction: column;
     }
 
     section {
         padding: 20px 50px;
     }
-
+    
     .box {
         padding: 100px 50px;
     }
@@ -162,7 +161,7 @@ section {
     section {
         padding: 20px;
     }
-
+    
     .box {
         padding: 220px 20px 120px;
     }

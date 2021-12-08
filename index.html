@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/d1.gif">
     <title>DevFlix | Devs Streaming</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/carousel2.css">
 
     <script src="https://kit.fontawesome.com/da4b7a64f8.js" crossorigin="anonymous"></script>
 </head>
@@ -15,7 +15,7 @@
     <nav class="navbar">
         <a href="index.html" class="logo"><img src="img/devflix1.gif" alt="logo"></a>
         <ul class="navbar-list">
-            <li class="navbar-item"><a href="">Inicio</a></li>
+            <li class="navbar-item"><a href="" class="active">Inicio</a></li>
             <li class="navbar-item"><a href="tutorials.html">Tutoriales</a></li>
             <li class="navbar-item"><a href="">Shorts</a></li>
             <li class="navbar-item"><a href="">Mi lista</a></li>
@@ -49,82 +49,13 @@
         <img src="img/close1.png" alt="close" class="close" onclick="toggleVideo();">
     </div>
 
-    <!--
-    <div id="carousel">
-        <input type="radio" name="slider" id="slide1" checked>
-        <input type="radio" name="slider" id="slide2">
-        <div id="carousel_container">
-            <div id="overflow">
-                <div class="inner">
-                    <div class="slide slide_1">
-                        <div class="slide-content">
-                            <div class="img_container">
-                                <img src="img/html.png" alt="">
-                                <p>Html</p>
-                            </div>
-                            <div class="img_container">
-                                <img src="img/htmlcss.png" alt="">
-                                <p>Html & CSS</p>
-                            </div>
-                            <div class="img_container">
-                                <img src="img/python.png" alt="">
-                                <p>Python</p>
-                            </div>
-                            <div class="img_container">
-                                <img src="img/react.png" alt="">
-                                <p>React</p>
-                            </div>
-                            <div class="img_container">
-                                <img src="img/typescript.png" alt="">
-                                <p>Typescript</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide slide_2">
-                        <div class="slide-content">
-                            <div class="img_container">
-                                <img src="img/angular.png" alt="">
-                                <p>Angular</p>
-                            </div>
-                            <div class="img_container">
-                                <img src="img/bootstrap.png" alt="">
-                                <p>Bootstrap</p>
-                            </div>
-                            <div class="img_container">
-                                <img src="img/vue.png" alt="">
-                                <p>Vue</p>
-                            </div>
-                            <div class="img_container">
-                                <img src="img/vsgit.png" alt="">
-                                <p>VS Code Git</p>
-                            </div>
-                            <div class="img_container">
-                                <img src="img/vscode.png" alt="">
-                                <p>VS Code</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="controls">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-        </div>
-        <div id="bullets">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-        </div>
-    </div>
-
-    -->
-
-    
     <div class="recommended-videos container">
         <div class="container-controllers">
             <h3>Vídeos recomendados</h3>
             <div class="indicators"></div>
         </div>
+
+        <!--
 
         <div class="main-container">
             <button role="button" id="leftArrow" class="leftArrow"><i class="fas fa-angle-left"></i></button>
@@ -199,9 +130,73 @@
 
             <button role="button" id="rightArrow" class="rightArrow"><i class="fas fa-angle-right"></i></button>
         </div>
+        -->
+
+        <div class="carousel-wrapper">
+            <span id="item-1"></span>
+            <span id="item-2"></span>
+            <span id="item-3"></span>
+            <span id="item-4"></span>
+            <span id="item-5"></span>
+            <span id="item-6"></span>
+            <span id="item-7"></span>
+            <span id="item-8"></span>
+            <span id="item-9"></span>
+            <span id="item-10"></span>
+
+            <div class="carousel-item item-1">
+                <a href="#item-10" class="arrow-prev arrow"></a>
+                <a href="#item-2" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-2">
+                <a href="#item-1" class="arrow-prev arrow"></a>
+                <a href="#item-3" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-3">
+                <a href="#item-2" class="arrow-prev arrow"></a>
+                <a href="#item-4" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-4">
+                <a href="#item-3" class="arrow-prev arrow"></a>
+                <a href="#item-5" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-5">
+                <a href="#item-4" class="arrow-prev arrow"></a>
+                <a href="#item-6" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-6">
+                <a href="#item-5" class="arrow-prev arrow"></a>
+                <a href="#item-7" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-7">
+                <a href="#item-6" class="arrow-prev arrow"></a>
+                <a href="#item-8" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-8">
+                <a href="#item-7" class="arrow-prev arrow"></a>
+                <a href="#item-9" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-9">
+                <a href="#item-8" class="arrow-prev arrow"></a>
+                <a href="#item-10" class="arrow-next arrow"></a>
+            </div>
+
+            <div class="carousel-item item-10">
+                <a href="#item-9" class="arrow-prev arrow"></a>
+                <a href="#item-1" class="arrow-next arrow"></a>
+            </div>
+        </div>
+
     </div>
     
-
     <script>
         function toggleVideo(){
             const trailer = document.querySelector('.trailer');
