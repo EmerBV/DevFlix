@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px;
-    z-index: 100;
+    z-index: 1;
 }
 
 nav .logo img {
@@ -100,20 +100,31 @@ section {
     color: #fff;
 }
 
-.box .form .inputBx input[type="submit"] {
+.box .form .inputBx a {
     background: #fff;
     color: #111;
-    max-width: 100px;
+    width: 100%;
     padding: 8px 10px;
     box-shadow: none;
+    font-size: 18px;
     font-weight: 500;
     letter-spacing: 1px;
-    cursor: pointer;
+    border-radius: 6px;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.box .form .inputBx a:hover {
+    background-color: #0d6efd;
+    color: #fff;
 }
 
 .box .form .inputBx img {
     position: absolute;
-    top: 8px;
+    top: 5px;
     left: 10px;
     transform: scale(0.7);
     filter: invert(1);

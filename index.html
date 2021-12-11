@@ -4,156 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/d1.gif">
-    <title>DevFlix | Devs Streaming</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/footer.css">
-
-    <script src="https://kit.fontawesome.com/da4b7a64f8.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/d1.gif">
+    <title>DevFlix | Login</title>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
     <nav class="navbar">
-        <a href="index.html" class="logo"><img src="img/devflix1.gif" alt="logo"></a>
-        <ul class="navbar-list">
-            <li class="navbar-item"><a href="" class="active">Inicio</a></li>
-            <li class="navbar-item"><a href="tutorials.html">Tutoriales</a></li>
-            <li class="navbar-item"><a href="">Shorts</a></li>
-            <li class="navbar-item"><a href="">Mi lista</a></li>
-        </ul>
-        <div class="search">
-            <input type="text" class="" placeholder="Título, personas, lenguaje">
-            <i class="fas fa-search"></i>
-        </div>
+        <a class="logo"><img src="./img/devflix1.gif" alt="logo"></a>
     </nav>
-    
-    <header class="banner">
-        <img src="img/javascript.png" alt="bg" class="bg">
-        <div class="content">
-            <img src="img/jslogo.png" alt="jslogo" class="videoTitle">
-            <h4>
-                <span>2021</span>
-                <span><i>A</i></span>
-                <span>9h 16min</span>
-                <span>Tutorial</span>
-            </h4>
-            <p>En este curso completo de JavaScript aprenderás todo lo que necesitas saber para comenzar a trabajar este lenguaje de programación paso a paso con ejemplos.</p>
-            <div class="buttons">
-                <a href="#"><i class="fas fa-play" aria-hidden="true"></i>Reproducir</a>
-                <a href="#"><i class="fas fa-plus" aria-hidden="true"></i>Mi lista</a>
+    <section>
+        <div class="box">
+            <div class="form">
+                <h2>Login</h2>
+                <form>
+                    <div class="inputBx">
+                        <input type="text" placeholder="Usuario">
+                        <img src="./img/usuario.png" alt="">
+                    </div>
+                    <div class="inputBx">
+                        <input type="password" placeholder="Contraseña">
+                        <img src="./img/lock.png" alt="">
+                    </div>
+                    <label class="remember"><input type="checkbox"> Recuérdame</label>
+                    <div class="inputBx">
+                        <a href="./html/streaming.html">Login</a>
+                    </div>
+                </form>
+                <p>He olvidado mi <a href="./html/forgot.html">contraseña</a></p>
+                <p>Crear una <a href="./html/signup.html">cuenta</a></p>
             </div>
         </div>
-        <a class="play" onclick="toggleVideo();"><img src="img/play1.png" alt="play_button">Ver Trailer</a>
-    </header>
-
-    <div class="trailer">
-        <video src="video/js2.webm" controls="true"></video>
-        <img src="img/close1.png" alt="close" class="close" onclick="toggleVideo();">
-    </div>
-
-    <div class="recVideos">
-        <h3>Vídeos recomendados</h3>
-    </div>
-
-    <div class="carousel-wrapper">
-        <span id="item-1"></span>
-        <span id="item-2"></span>
-        <span id="item-3"></span>
-        <span id="item-4"></span>
-        <span id="item-5"></span>
-        <span id="item-6"></span>
-        <span id="item-7"></span>
-        <span id="item-8"></span>
-        <span id="item-9"></span>
-        <span id="item-10"></span>
-
-        <div class="carousel-item item-1">
-            <a href="#item-9" class="arrow-prev arrow"></a>
-            <a href="#item-2" class="arrow-next arrow"></a>
-        </div>
-
-        <div class="carousel-item item-2">
-            <a href="#item-1" class="arrow-prev arrow"></a>
-            <a href="#item-3" class="arrow-next arrow"></a>
-        </div>
-
-        <div class="carousel-item item-3">
-            <a href="#item-2" class="arrow-prev arrow"></a>
-            <a href="#item-4" class="arrow-next arrow"></a>
-        </div>
-
-        <div class="carousel-item item-4">
-            <a href="#item-3" class="arrow-prev arrow"></a>
-            <a href="#item-5" class="arrow-next arrow"></a>
-        </div>
-
-        <div class="carousel-item item-5">
-            <a href="#item-4" class="arrow-prev arrow"></a>
-            <a href="#item-6" class="arrow-next arrow"></a>
-        </div>
-
-        <div class="carousel-item item-6">
-            <a href="#item-5" class="arrow-prev arrow"></a>
-            <a href="#item-7" class="arrow-next arrow"></a>
-        </div>
-
-        <div class="carousel-item item-7">
-            <a href="#item-6" class="arrow-prev arrow"></a>
-            <a href="#item-8" class="arrow-next arrow"></a>
-        </div>
-
-        <div class="carousel-item item-8">
-            <a href="#item-7" class="arrow-prev arrow"></a>
-            <a href="#item-9" class="arrow-next arrow"></a>
-        </div>
-
-        <div class="carousel-item item-9">
-            <a href="#item-8" class="arrow-prev arrow"></a>
-            <a href="#item-10" class="arrow-next arrow"></a>
-        </div>
-
-        <div class="carousel-item item-10">
-            <a href="#item-9" class="arrow-prev arrow"></a>
-            <a href="#item-1" class="arrow-next arrow"></a>
-        </div>
-    </div>
-
-    <section class="footer">
-        <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-        
-        <ul class="list">
-            <li>
-                <a href="#">Privacidad</a>
-            </li>
-            <li>
-                <a href="#">Información corporativa</a>
-            </li>
-            <li>
-                <a href="#">Términos de uso</a>
-            </li>
-            <li>
-                <a href="#">Contáctanos</a>
-            </li>
-        </ul>
-        <p class="copyright">
-            DevFlix <span>&copy;</span> 2021.
-        </p>
     </section>
-    
-    <script>
-        function toggleVideo(){
-            const trailer = document.querySelector('.trailer');
-            const video = document.querySelector('video');
-            trailer.classList.toggle('active')
-            video.currentTime = 0;
-            video.pause();
-        }
-    </script>
-    
 </body>
 </html>
