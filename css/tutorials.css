@@ -183,6 +183,38 @@ nav .logo img {
     align-items: flex-end;
 }
 
+.content-btn {
+    cursor: pointer;
+    border: 1px solid #0d6efd;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #0d6efd;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 5px 10px;
+    transition: all 0.6s ease;
+}
+
+.content-btn:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.content-widgets i {
+    cursor: pointer;
+    margin-top: 10px;
+    color: #fff;
+    background-color: rgba(48, 48, 48, 0.658);
+    padding: 10px;
+    transition: all 0.4s ease;
+}
+
+.content-widgets i:hover {
+    color: #0d6efd;
+    background-color: rgba(48, 48, 48, 0.658);
+}
+
 .container .box .content h2 {
     color: #fff;
     transition: 0.5s;
@@ -209,64 +241,93 @@ nav .logo img {
     transition-delay: 0.7s;
 }
 
-.content-btn {
+/* CHECKBOX LIKE */
+
+[id="heart1"],
+[id="heart2"],
+[id="heart3"],
+[id="heart4"],
+[id="heart5"],
+[id="heart6"],
+[id="heart7"],
+[id="heart8"],
+[id="heart9"],
+[id="heart10"] {
+    position: absolute;
+    left: -100vw;
+}
+
+.content-widgets [for="heart1"],
+.content-widgets [for="heart2"],
+.content-widgets [for="heart3"],
+.content-widgets [for="heart4"],
+.content-widgets [for="heart5"],
+.content-widgets [for="heart6"],
+.content-widgets [for="heart7"],
+.content-widgets [for="heart8"],
+.content-widgets [for="heart9"],
+.content-widgets [for="heart10"] {
     cursor: pointer;
-    border: 1px solid #0d6efd;
-    background-color: transparent;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    margin-top: 10px;
-    padding: 5px 10px;
-    transition: all 0.6s ease;
-}
-
-.content-btn:hover {
-    color: #0d6efd;
-}
-
-.container .box .content .content-btn,
-.container .box .content .content-btn:hover {
-    color: #fff;
-    transform: translateY(200px);
-    transition: 0.5s;
-    font-size: 14px;
-}
-
-.container .box:hover .content .content-btn,
-.container .box:hover .content .content-btn:hover {
-    transform: translateY(0);
-    transition-delay: 0.7s;
-}
-
-.content-widgets i {
-    cursor: pointer;
-    margin-top: 10px;
+    font-size: 16px;
     color: #fff;
     background-color: rgba(48, 48, 48, 0.658);
     padding: 10px;
-    border-radius: 100%;
     transition: all 0.4s ease;
 }
 
-.content-widgets i:hover {
-    color: #0d6efd;
+[for="heart1"]:hover,
+[for="heart2"]:hover,
+[for="heart3"]:hover,
+[for="heart4"]:hover,
+[for="heart5"]:hover,
+[for="heart6"]:hover,
+[for="heart7"]:hover,
+[for="heart8"]:hover,
+[for="heart9"]:hover,
+[for="heart10"]:hover {
+    color: grey;
     background-color: rgba(48, 48, 48, 0.658);
 }
 
-.container .box .content .content-widgets i,
-.container .box .content .content-widgets i:hover {
-    color: #fff;
-    transform: translateY(200px);
-    transition: 0.5s;
-    font-size: 14px;
+[for="heart1"]::selection,
+[for="heart2"]::selection,
+[for="heart3"]::selection,
+[for="heart4"]::selection,
+[for="heart5"]::selection,
+[for="heart6"]::selection,
+[for="heart7"]::selection,
+[for="heart8"]::selection,
+[for="heart9"]::selection,
+[for="heart10"]::selection {
+    color: none;
+    background: transparent;
 }
 
-.container .box:hover .content .content-widgets i,
-.container .box:hover .content .content-widgets i:hover {
-    transform: translateY(0);
-    transition-delay: 0.7s;
+[for="heart1"]::moz-selection,
+[for="heart2"]::moz-selection,
+[for="heart3"]::moz-selection,
+[for="heart4"]::moz-selection,
+[for="heart5"]::moz-selection,
+[for="heart6"]::moz-selection,
+[for="heart7"]::moz-selection,
+[for="heart8"]::moz-selection,
+[for="heart9"]::moz-selection,
+[for="heart10"]::moz-selection {
+    color: none;
+    background: transparent;
+}
+
+[id="heart1"]:checked + label,
+[id="heart2"]:checked + label,
+[id="heart3"]:checked + label,
+[id="heart4"]:checked + label,
+[id="heart5"]:checked + label,
+[id="heart6"]:checked + label,
+[id="heart7"]:checked + label,
+[id="heart8"]:checked + label,
+[id="heart9"]:checked + label,
+[id="heart10"]:checked + label {
+    color: #e2264d; 
 }
 
 /* PIE DE PÁGINA */
