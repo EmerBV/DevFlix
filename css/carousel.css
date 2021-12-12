@@ -1,46 +1,44 @@
 .recVideos {
-    top: 0;
-    left: 0;
-    width: 100%;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
     display: flex;
-    padding: 20px 100px;
-    margin-bottom: 0;
+    align-items: left;
 }
 
 h3 {
     color: #fff;
 	  font-size: 30px;
-    letter-spacing: 1px;
-    text-align: center;
+    letter-spacing: 1px; 
 }
 
 .carousel-wrapper {
-    position: relative;
-    margin: 30px auto;
-    display: flex;
-    width: 80%;
-    min-height: 80vh;
-    justify-content: flex-start;
-    align-items: center;
+  width: 90%;
+  min-height: 100vh;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .carousel-item {
   position: absolute;
-  padding: 25px 50px;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  flex-wrap: wrap-reverse;
 }
 
 .arrow {
     border: solid #fff;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 12px
+    padding: 12px;
+    z-index: 1;
 }
 
 .arrow-prev {
@@ -173,44 +171,4 @@ h3 {
   #item-10:target ~ .item-1 {
     z-index: 3;
     opacity: 1;
-}
-
-@media (max-width: 991px) {
-
-  .carousel-wrapper {
-    padding: 100px 50px;
-  }
-
-  .recVideos h3 {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    justify-content: center;
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-}
-
-@media (max-width: 600px) {
-  
-  .carousel-wrapper {
-      padding: 220px 20px 120px;
-  }
-
-  .recVideos h3 {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    justify-content: center;
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
 }
