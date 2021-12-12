@@ -31,16 +31,16 @@ nav {
 }
 
 .navbar {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 100px;
+    padding: 10px 100px;
     z-index: 100;
-    
+    background: rgba(255, 255, 255, .1);
 }
 
 nav .logo img {
@@ -111,7 +111,7 @@ nav .logo img {
 .container {
     padding: 100px 100px 100px;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(300px,300px));
 }
@@ -125,6 +125,7 @@ nav .logo img {
     max-width: 968px;
     margin: 2rem auto 1rem;
     display: grid;
+    border-radius: 5px;
 }
 
 .container .box:hover {
